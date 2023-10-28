@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Tungsten-Bold';
+    src: url('../../fonts/Tungsten/Tungsten-Bold.ttf') format('truetype');
+         font-weight: 100 900;
+         font-display: swap;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN Next LT Arabic Bold';
+    src: url('../../fonts/DIN Next/DIN Next LT Arabic Bold.ttf') format('truetype');
+         font-weight: 100 900;
+         font-display: swap;
+         font-style: normal;
+}
+
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: gray;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    font-size: 4em;
+    user-select: none;
+    color: #FFF;
+    background-image: url('../../resources/valorant/background.mp4');
+}
+
+
+
+.bg_vid {
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    float: right;
+}
+
+
+.main_label_section {
+    /* background-color: rgba(250, 235, 215, 0.295); */
+
+
+    padding: 0;
+    margin: 0;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    height: 4rem;
+    width: 18rem;
+    position: relative;
+}
+
+
+
+
+.main_label_section_logo {
+    /* background-color: rgba(0, 255, 0, 0.349); */
+
+
+    padding: 0;
+    margin: 0;
+    margin-top: .063rem;
+    position: absolute;
+}
+
+
+
+
+
+.main_label_secondary_section {
+    /* background-color: hsla(355, 99%, 63%, 0.356); */
+
+    padding: 0;
+    margin: 0;
+    margin-left: 1rem;
+    height: 100%;
+    width: 75%;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+
+
+.main_label_section_title {
+    padding: 0;
+    margin: 0;
+    height: 3.5rem;
+    font-size: 3.5rem;
+    color: hsl(0, 0%, 0%, 0);
+    -webkit-text-stroke-width: .25px;
+    -webkit-text-stroke-color: #fff;
+    font-family: 'Tungsten-Bold';
+    letter-spacing: .188rem;
+    left: 0;
+    top: 0;
+
+
+    /* background-color: hsla(253, 99%, 63%, 0.363); */
+}
+
+.main_label_section_subtitle {
+    padding: 0;
+    margin: 0;
+    margin-top: .625rem;
+    height: 1.125rem;
+    font-size: 1.125rem;
+    font-family: "DIN Next LT Arabic Bold";
+    letter-spacing: .063rem;
+    position: absolute;
+    color: #c0bdbb;
+
+
+    /* background-color: rgba(251, 255, 25, 0.151); */
+}
+
+
+
+
+
+
+
+
+
+
+
+.main_body_list_menu {
+    position: absolute;
+    list-style-type: none;
+    letter-spacing: 3px;
+    font-family: 'Tungsten-Bold';
+    padding: 0;
+    margin: 0;
+}
+
+
+.custom_li_bullet {
+    display: inline-block;
+    width: .13em;
+    height: .13em;
+    transform: rotate(45deg);
+    background-color: #FFF;
+    margin-right: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.play_li_main_text {
+    font-size: 2em;
+    color: #fe4554;
+}
+
+
+li {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    /* border: 2px black dotted; */
+    gap: .188rem;
+}
+
+
+li:hover .li_text{
+    transform: translateX(.75rem);
+    color: #42fed0;
+}
+
+li:hover .custom_li_bullet{
+    transform: rotate(135deg) scale(1.5);
+    background-color: #42fed0;
+}
+
+.custom_li_bullet, .li_text {
+    transition: transform 130ms ease-in-out;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.chat_input_textbox {
+    padding-left: 13px;
+    margin: 3px;
+    color: #7596a5;
+    position: fixed;
+    bottom: 0;
+    height: 32px;
+    width: 431px;
+    background-color: hsla(219, 23%, 12%, 0.39);
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+.right_pannel_menu {
+    padding: 0;
+    margin: 0;
+    width: 55px;
+    height: 100vh;
+    background-color: #171c25;
+    right: 0;
+    position: fixed;
+    top: 51px;
+}
+
+.right_pannel_menu hr {
+    padding: 0;
+    margin: 0;
+    color: #86898e;
+}
+
+
+
+
+
+
+
+
+
+
+/* .main_body_list_menu {
+    background-color: hsla(0, 100%, 50%, 0.178);
+}
+
+.main_body_content {
+    background-color: rgba(0, 255, 76, 0.288);
+}
+
+.li_text {
+    background-color: rgba(255, 255, 0, 0.274);
+}
+
+.main_body_list_menu li{
+    background-color: rgba(0, 255, 255, 0.144);
+} */
